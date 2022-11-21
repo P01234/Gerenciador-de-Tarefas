@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius:4.5px
 }
 #mainSection{
     position: relative;
@@ -42,9 +41,13 @@
     background-repeat: no-repeat;
     border:5px solid black;
     border-right:1px solid black;
+    border-radius:4.5px;
     min-height:80%;
     max-height:90%;
     width:50%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 #mainHead{
     display:block;
@@ -77,10 +80,16 @@
     align-items: center;
     background-image:url(/imagens/organize.jpg);
     border:5px solid black;
+    border-radius:4.5px;
     border-left:none;
     min-height:80%;
     max-height:90%;
     width:40%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 #formArea{
     position:relative;
@@ -105,4 +114,26 @@
 #formArea > .inputForm{
     margin:20px;
     border:solid rgb(101, 101, 101) 2px;
+    border-radius:4.5px;
+}
+.inputFormButton{
+    display: block;
+    text-align:center;
+    margin: 0 auto;
+    margin-top:15px;
+    width:80px;
+    height:30px;   
+    background: rgb(0,0,8);
+    background: linear-gradient(150deg, rgba(0,0,8,1) 0%, rgba(104,106,107,1) 35%, rgba(244,253,255,1) 100%);  
+    background-size:10px;
+    background-repeat: no-repeat;
+    border:1px solid black;
+    font-weight: 300;
+    color:black;
+    transition:background 1s;
+}
+.inputFormButton:hover{
+    background-size:100%;
+    color:black;
+    font-weight: 400;
 }
