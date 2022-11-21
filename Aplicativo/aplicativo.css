@@ -59,7 +59,17 @@
 #favHomeImage{
     margin-left:2px;
     position:absolute;
+    object-fit: contain;
+    height:20px;
     left:62px;
-    top:119.5px;
+    top:116.5px;
 }
-#
+#favFolderImage{
+    margin-left:2px;
+    position:absolute;
+    left:68px;
+    object-fit: contain;
+    height:25px;
+    width:auto;
+    top:139.5px;
+}
