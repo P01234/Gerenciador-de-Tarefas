@@ -10,25 +10,26 @@
     display:flexbox;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width:100vw;
     height:100vh;
     background:whitesmoke;
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
-    padding:5px;
 }
 #appArea{
     display:flex;
     flex-direction: row;
     flex:1;
     overflow:hidden;
-    width:auto;
+    width:95vw;
     min-height: 93vh;
     max-height:95vh;
     border:3px black solid;
     border-radius:10px;
     margin-bottom:5px;
+    box-shadow: 10px 5px 10px black;
+    margin:15px;
 }
 #navigationContainer{
     display:block;
