@@ -236,7 +236,7 @@
     background-color:white;
     height:90%;
     border-radius: 30px;
-    animation: 2s ease-out stretch_spin;
+    animation: 1s ease-out stretch_spin;
 }
 @keyframes stretch_spin{
     0%{
