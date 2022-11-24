@@ -4,6 +4,43 @@
     padding:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#modalContainer{
+    display:none;
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 3;
+    background-color:rgba(0,0,0,0.7);
+}
+#modal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:aliceblue;
+    border:solid 1px black;
+    border-radius: 10px;
+    width: 80%;
+    height:70%;
+}
+#signIn{
+    margin-bottom:25px;
+    border-bottom: 2px solid black;
+}
+#modal > #modalForm{
+    display:flex;
+    flex-direction: column;
+}
+#modalForm > input{
+    margin:15px;
+    border:2px solid black;
+    border-radius: 10px;
+}
 #mainSection{
     position: relative;
     display:flex;
@@ -18,7 +55,7 @@
     background-repeat: no-repeat;
     background-position:inherit;
     max-width:100%;
-    z-index: 1;
+    z-index: 2;
 }
 #mainSection::after{
     content: "";
@@ -138,3 +175,4 @@
     font-weight: 400;
     cursor:pointer;
 }
+

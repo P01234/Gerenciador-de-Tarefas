@@ -8,6 +8,20 @@
     <title>Gerenciador de Tarefas</title>
 </head>
 <body>
+    <section id="modalContainer">
+        <div id="modal">
+            <header>
+                <h2 id="signIn">Cadastro Usuário</h2>
+            </header>
+            <form  method="POST" id="modalForm">
+                <input placeholder="Insira o email" type="email">
+                <input placeholder="Confirme o email" type="email" name="nome" >
+                <input placeholder="Senha" type="password" name="senha" >
+                <input placeholder="Confirme a senha" type="password" name="senha2">
+            </form>
+            <div><button id="closeButton">X</button></div>
+        </div>
+    </section>
     <section id="mainSection">
         <section id="appText">
             <header id="mainHead">
@@ -21,14 +35,18 @@
         </section>
         <section id="formContainer">
             <main>
-                <form method="" action="/Aplicativo/aplicativo.html" id="formArea">
-                    <input type="number" placeholder="Id" class="inputForm">
-                    <input type="email" placeholder="Email" class="inputForm">
-                    <input type="password" placeholder="Password" class="inputForm">
+                <form method="Post" action="/Aplicativo/aplicativo.html" id="formArea">
+                    <input type="number" placeholder="Id" name="nome" class="inputForm">
+                    <input type="email" placeholder="Email" name="email" class="inputForm">
+                    <input type="password" placeholder="Password" name="senha" class="inputForm">
                     <input type="submit" value="Submit" class="inputFormButton">
                 </form>
+                <button id="cadastroButton">Sign in</button>
             </main>
         </section>
     </section>
+    <script src="modal.js">
+
+    </script>
 </body>
 </html>
