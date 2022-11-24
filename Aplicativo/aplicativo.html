@@ -6,49 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">  
+    <script src="https://kit.fontawesome.com/1a68e05586.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="aplicativo.css"> 
     <title>Aplicativo</title>
 </head>
 <body>
-    <section id="mainContainer">
-        <main>
-            <section id="appArea">
-                <section id="navigationContainer">
-                    <header id="headArea">
-                        <h1>Gerenciador</h1>
-                    </header>
-                    <nav id="navArea">
-                        <div>
-                            <a id="homeIcon">Home</a>
-                            <div class="faviconHolder">
-                                <img  id="favHomeImage" src="/Favicon/favicon.ico" alt="homeIcon">
-                            <div>
-                        </div>
-                        <div>
-                            <ul>
-                                <li id="directoryIcon">Folders</li>
-                                <ul id="subDirectories">
-                                    
-                                </ul>
-                            </ul>
-                            <div class="faviconHolder">
-                                <img id="favFolderImage" src="/Favicon/folder.ico" alt="">
-                            </div>
-                        </div>
-                    </nav>
-                </section>
-                <section id="listArea">
-                    <header id="">
-                        <h2>Gerenciador De Tarefas</h2>
-                    </header>
-                        <section id="taskAreaContainer">
-                                <article id="taskArea">
-                                    <div>Example</div>
-                                </article>
-                        </section>
-                </section>
-            </section>
-        </main>
+    <section id="modal">
+        <div id="modal_FormArea">
+            <form action="">
+                <input type="text" name="TaskName" id="TaskName" class="formInput">
+                <input type="date" name="" id="FinalDate" class="formInput">
+                <input type="range" name="" min="1" max="3" id="Priority" class="formInput">
+            </form>
+        </div>
     </section>
+    <main>
+        <section id="mainContainer">
+                <section id="appArea">
+                    <section id="navigationContainer">
+                        <header id="headArea">
+                            <h1>Gerenciador</h1>
+                        </header>
+                        <nav id="navArea">
+                            <div class="icon_text">
+                                <p id="homeIcon"><i class="fa-solid fa-house-user icon"></i></p>
+                                <p id="textHome">Home</p>
+                            </div>
+                            <div class="icon_text">
+                                <p id="folderIcon"><i class="fa-solid fa-folder icon"></i></p>
+                                <p id="textFolder">Folders<i class="fa fa-angle-down" id="down" aria-hidden="true"></i></p>
+                            </div>
+                            <div id="subDirectoriesFolder">
+                                <ul id="subDirectories">
+                                    <li>alface</li>
+                                    <li>pastel</li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                    <section id="listArea">
+                        <header id="listAreaHeader">
+                            <h2>Gerenciador De Tarefas</h2>
+                            <div id="addTaskArea">
+                                <button id="plusIconButton"><i class="fa-solid fa-plus" id="plusIcon"></i></button>
+                            </div>
+                        </header>
+                            <section id="taskAreaContainer">
+                                    <article id="taskArea">
+                                        <div id="tasks">
+                                            <div id="changePriority"><input  id="priorityButton" type="range" min="1" max="3" value="Prioridade"></div>
+                                            <div id="deleteTask"><input id="deleteButton" type="button" value="Deletar"></div>
+                                        </div>
+                                    </article>
+                            </section>
+                    </section>
+                </section>
+        </section>
+    </main>
 </body>
 </html>
